@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Import;
  * 1.包扫描+组件标注注解（@Controller,@Service,@Component,@Repository）
  * 2.@Bean(一般用于引入第三方包里面的组件注册)
  * 3.@import快速给容器导入一个组件（id是导入组件类的全名）
+ * 4.@ImportSelector:返回需要导入的组件的全类名的数组
+ * 5.@ImportBeanDefinitionRegistar:手动注册bean到容器
  */
 @Configuration
 @Import(Color.class)
