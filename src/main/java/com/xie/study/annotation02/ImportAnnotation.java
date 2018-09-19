@@ -1,5 +1,6 @@
 package com.xie.study.annotation02;
 
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -18,8 +19,8 @@ import org.springframework.context.annotation.Import;
 public class ImportAnnotation {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(ImportAnnotation.class);
-        String beanNames[] = annotationConfigApplicationContext.getBeanDefinitionNames();
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ImportAnnotation.class);
+        String beanNames[] = applicationContext.getBeanDefinitionNames();
         for (String beanName : beanNames){
             System.out.println(beanName);
         }
