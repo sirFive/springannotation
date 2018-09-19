@@ -4,6 +4,10 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 
+/**
+ * 初始化和销毁方法2：
+ * InitializingBean,DisposableBean
+ */
 @Component
 public class Cat implements InitializingBean,DisposableBean {
 

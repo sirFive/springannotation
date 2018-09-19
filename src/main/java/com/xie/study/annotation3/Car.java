@@ -1,5 +1,9 @@
 package com.xie.study.annotation3;
 
+/**
+ * 初始化方法一：
+ * 注解声命：initMethod和destoryMethod
+ */
 public class Car {
 
     public Car(){

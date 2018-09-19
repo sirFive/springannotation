@@ -16,6 +16,10 @@ import org.springframework.context.annotation.Configuration;
  * 初始化和销毁的第二种方法：
  *  初始化：实现InitializingBean，并使用它的afterPropertiesSet()方法
  *  销毁：实现DisposableBean，并使用它的destroy()方法
+ *
+ *  初始化和销毁的第三种方法：
+ *  初始化：@PostConstruct
+ *  销毁：@PreDestroy
  */
 @Configuration
 @ComponentScan("com.xie.study.annotation3")
