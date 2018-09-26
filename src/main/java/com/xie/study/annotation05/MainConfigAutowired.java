@@ -19,6 +19,12 @@ import org.springframework.stereotype.Component;
  *               @Bean("xieDao2")
  *          比如：XieDao xieDao;
  *          则spring在装备xieDao的时候优先装载xieDao2
+ *
+ *  5.@Autowired标注的位置可以在构造器，参数，方法，属性
+ *      1.）方法：比如setter上，setter用的参数从容器获取。@Bean标注的方法，其参数也是从容器中获取，
+ *              即使你不对参数添加@Autowired
+ *      2.）标在构造器上，参数从容器中获取，如果组件只有一个有参构造器，则@Autowired可以省略
+ *      3.）放在参数中，参数也是从容器中获取
  */
 @Configuration
 @Component("com.xie.study.annotation05")
