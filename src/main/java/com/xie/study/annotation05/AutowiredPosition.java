@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AutowiredPosition {
     /**
-     * 1.属性上
+     * 1.属性上，。。。
      */
     @Autowired
     XieDao xieDao;
