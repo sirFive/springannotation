@@ -4,7 +4,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 /**
  * 自动装配：spring利用依赖注入（DI），完成对IOC容器中各个组件依赖关系的赋值
@@ -27,7 +26,7 @@ import org.springframework.stereotype.Component;
  *      3.）放在参数中，参数也是从容器中获取
  */
 @Configuration
-@Component("com.xie.study.annotation05")
+@ComponentScan("com.xie.study.annotation05")
 public class MainConfigAutowired {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigAutowired.class);
